@@ -56,8 +56,7 @@ jobs:
           tag_name: ${{ github.run_number }}
           release_name: Release from ${{ github.run_number }}
 
-
-documentation:
+  documentation:
     runs-on: ubuntu-latest
     needs: lint
     steps:
@@ -74,3 +73,5 @@ documentation:
         with:
           branch: gh-pages
           folder: docs
+
+
